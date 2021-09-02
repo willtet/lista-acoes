@@ -11,26 +11,26 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<form class="w-75 mx-auto">
+		<form method="POST" class="w-75 mx-auto" action="<c:url value="/transacoes"/>">
 			<div class="form-group">
 				<label for="ticker">Ticker</label>
-				<input id="ticker" class="form-control">
+				<input name="ticker" id="ticker" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="data">Data</label>
-				<input type="date" id="data" class="form-control">
+				<input name="date" type="date" id="data" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="preco">Preço</label>
-				<input id="preco" type="number" min="0.01" step="0.01" class="form-control">
+				<input name="preco" id="preco" type="number" min="0.01" step="0.01" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="quantidade">Quantidade</label>
-				<input id="quantidade" class="form-control">
+				<input name="quantidade" id="quantidade" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="tipo">Tipo</label>
-				<input id="tipo" class="form-control">
+				<input name="tipo" id="tipo" class="form-control">
 			</div>
 			<input class="mt-2 btn-primary" type="submit" value="Enviar">
 		</form>
